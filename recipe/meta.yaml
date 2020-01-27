@@ -22,7 +22,7 @@ requirements:
     - setuptools_scm_git_archive
   run:
     - python >=3.6
-    - tensorflow-base >=1.12.0
+    - tensorflow >=2.0.0
     - tensorflow-probability
     # Workaround for https://github.com/conda-forge/tensorflow-probability-feedstock/pull/11
     - decorator
@@ -39,7 +39,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: Physics extension to zfit
+  summary: Phase space generation implemented in TensorFlow
   doc_url: https://phasespace.readthedocs.io
   dev_url: https://github.com/zfit/phasespace
 
