@@ -1,5 +1,5 @@
 {% set name = "phasespace" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/zfit/phasespace/archive/{{ version }}.tar.gz
-  sha256: 1a368a8171c13110bc0aa78b721048ba9f3b7d7f2f56a8674092b58de58c7b48
+  sha256: 432558f140f134169af6b4189ab3a6eeca6014f558d70bc8f612e632f1627dba
 
 build:
   number: 0
