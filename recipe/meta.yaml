@@ -22,8 +22,8 @@ requirements:
     - setuptools_scm_git_archive
   run:
     - python >=3.6
-    - tensorflow >=2.0.0
-    - tensorflow-probability
+    - tensorflow >=2.3,<=2.4
+    - tensorflow-probability>=0.11, <=0.12
     # Workaround for https://github.com/conda-forge/tensorflow-probability-feedstock/pull/11
     - decorator
     - cloudpickle >=0.6.1
@@ -33,6 +33,7 @@ test:
     - phasespace
     - phasespace.kinematics
     - phasespace.phasespace
+    - phasespace.random
 
 about:
   home: https://github.com/zfit/phasespace
