@@ -1,17 +1,17 @@
 {% set name = "phasespace" %}
-{% set version = "1.1.1" %}
+{% set version = "1.2.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://github.com/zfit/phasespace/archive/{{ version }}.tar.gz
-  sha256: 432558f140f134169af6b4189ab3a6eeca6014f558d70bc8f612e632f1627dba
+  sha256: 5a49213012f716995e9c5824843faa1831cadb6744161338d18de99d1403fb9c
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv "
+  script: '{{ PYTHON }} -m pip install . -vv '
   noarch: python
 
 requirements:
