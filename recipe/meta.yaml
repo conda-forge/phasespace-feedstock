@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/zfit/phasespace/archive/{{ version }}.tar.gz
-  sha256: 5a49213012f716995e9c5824843faa1831cadb6744161338d18de99d1403fb9c
+  sha256: b69ccef6598e4ede65e50f20eb4426739c1be048b928cf54d5e77bf93edc8459
 
 build:
   number: 0
