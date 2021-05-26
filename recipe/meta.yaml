@@ -1,17 +1,17 @@
 {% set name = "phasespace" %}
-{% set version = "1.1.1" %}
+{% set version = "1.2.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://github.com/zfit/phasespace/archive/{{ version }}.tar.gz
-  sha256: 432558f140f134169af6b4189ab3a6eeca6014f558d70bc8f612e632f1627dba
+  sha256: b69ccef6598e4ede65e50f20eb4426739c1be048b928cf54d5e77bf93edc8459
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv "
+  script: '{{ PYTHON }} -m pip install . -vv '
   noarch: python
 
 requirements:
@@ -22,17 +22,15 @@ requirements:
     - setuptools_scm_git_archive
   run:
     - python >=3.6
-    - tensorflow >=2.0.0
-    - tensorflow-probability
-    # Workaround for https://github.com/conda-forge/tensorflow-probability-feedstock/pull/11
-    - decorator
-    - cloudpickle >=0.6.1
+    - tensorflow >=2.3,<=2.5
+    - tensorflow-probability >=0.11,<=0.13
 
 test:
   imports:
     - phasespace
     - phasespace.kinematics
     - phasespace.phasespace
+    - phasespace.random
 
 about:
   home: https://github.com/zfit/phasespace
