@@ -1,5 +1,5 @@
 {% set name = "phasespace" %}
-{% set version = "1.7.0" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/zfit/phasespace/archive/{{ version }}.tar.gz
-  sha256: 28294c9748cf6922d05d41b639c0f089083f0e6cf80ac36315fcd4f73cddba3e
+  sha256: d0d32d39078f80dc8711ee90204c896f117f226d883c8cdb5d154db7d7513414
 
 build:
   number: 0
@@ -17,13 +17,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - setuptools_scm
     - setuptools_scm_git_archive
   run:
-    - python >=3.6
-    - tensorflow >=2.4,<=2.7
-    - tensorflow-probability >=0.12,<=0.14
+    - python >=3.7
+    - tensorflow >=2.7
+    - tensorflow-probability >=0.17
 
 test:
   imports:
