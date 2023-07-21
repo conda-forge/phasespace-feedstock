@@ -17,13 +17,15 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
     - setuptools_scm
     - setuptools_scm_git_archive
   run:
-    - python >=3.7
+    - python >=3.8
     - tensorflow >=2.7
     - tensorflow-probability >=0.17
+    - particle
+    - decaylanguage
 
 test:
   imports:
