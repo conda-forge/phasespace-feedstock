@@ -1,11 +1,11 @@
-About phasespace
-================
+About phasespace-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/phasespace-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/zfit/phasespace
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/phasespace-feedstock/blob/main/LICENSE.txt)
 
 Summary: Phase space generation implemented in TensorFlow
 
